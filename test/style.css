@@ -1,0 +1,92 @@
+html {
+    font-size: 16px;
+}
+
+/* About Me Section */
+.about {
+    display: flex;
+}
+
+.about-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 4px solid black;
+    height: 30rem;
+    color: black
+}
+    /* Information Section */
+    .info {
+        width: 35%;
+        margin-right: 10px;
+        /* for dp / name and icons */
+        flex-direction: column;
+    }
+
+    .info section { /* Not really that important?*/
+        border: 1px solid red;
+        width: 100%;
+    }
+
+    #dp {
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #dps {
+        background: black;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100px;
+    }
+
+    #bio_name {
+        background: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bio_name H1 {
+        color: white;
+    }
+
+    #icons {
+        background: blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #icons div {
+        background: black;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 20px;
+    }
+
+    #bio_name, #icons { /* Controls the height of Name and Icons */
+        height:10%;
+    }
+/*---------------------------------------------------------------------*/
+    /* Bio Section */
+    .bio {
+        width: 65%;
+        flex-direction: column;
+    }
+
+    .bio section {
+        border: 1px solid red;
+        width: 100%;
+    }
+
+    #title_bio, #detail_bio { /* Controls the height of heading and detail. */
+        height: 10%;
+    }
+
+    #para_bio {
+        height: 80%;
+    }
