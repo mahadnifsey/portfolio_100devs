@@ -58,7 +58,7 @@
      color: skyblue;
    }
    
-   section {
+   section { /* Controls all sections */
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -69,10 +69,9 @@
      scroll-snap-align: center;
    }
    
-   #home {
-     background: url("../images/07.jpg") no-repeat top center/cover;
-   }
 
+/*---------------------------------------------------------------------*/
+/* Home Section */
    #home h1 {
      font-size: 3rem;
    }
@@ -88,25 +87,22 @@
    section p {
      font-size: 1.5rem;
    }
-   
+
+   #home {
+    background: url("../images/07.jpg") no-repeat top center/cover;
+  }
+
+/*---------------------------------------------------------------------*/
 /* About Me */
+   #about {
+    display: flex;
+    border: 1px solid red;
+   }
 
    #about h1 {
      border: 1px solid red;
    }
 
-   .flex-container {
-     display: flex;
-   }
-
-   .flex-child {
-     flex: 1;
-     border: 2px solid yellow;
-   }
-
-   .flex-child:first-child {
-     margin-right: 20px;
-   }
 
    #about section {
      border: 1px solid red;
@@ -118,20 +114,29 @@
   }
 
    section#about {
-     background: url("../images/07.jpg") no-repeat top center/cover;
+     background: url("../images/02.jpg") no-repeat top center/cover;
    }
+
+/*---------------------------------------------------------------------*/
+/* Services */
    
    section#services {
      background: url("../images/06.jpg") no-repeat top center/cover;
    }
 
+/*---------------------------------------------------------------------*/
+/* Portfolio */  
    section#portfolio {
     background: url("../images/02.jpg") no-repeat top center/cover;
   }
-   
+
+/*---------------------------------------------------------------------*/
+/* Contact */ 
    section#contact {
      background: url("../images/05.jpg") no-repeat top center/cover;
    }
+
+/*---------------------------------------------------------------------*/
 
    /* Button */
    .raise:hover,
