@@ -42,7 +42,7 @@ html {
         height: 15rem;
         width: 15rem;
         border-radius: 20rem;
-        background: url(images/01.png);
+        background: url(images/icons/01.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -81,7 +81,6 @@ html {
         flex-direction: column;
         font-size: 1.2rem;
         font-family: 'Manrope', sans-serif;
-
     }
 
     .bio section {
