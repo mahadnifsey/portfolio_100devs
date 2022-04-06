@@ -42,7 +42,7 @@ html {
         height: 15rem;
         width: 15rem;
         border-radius: 20rem;
-        background: url(images/icons/01.png);
+        background: url(images/01.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -108,8 +108,7 @@ html {
     }
 
     #detail_bio h4 {
-        font-weight: 700;
-        
+        font-weight: 700; 
     }
 
     #para_bio {

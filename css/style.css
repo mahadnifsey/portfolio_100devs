@@ -61,7 +61,7 @@ html {
      color: skyblue;
    }
    
-   section { /* Controls all sections */
+   section { /* Controls all sections and their positions. */
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -78,7 +78,7 @@ html {
      font-size: 3rem;
    }
 
-   #home h1 span{
+   #home h1 span {
      color: #ABDE00; 
    }
 
@@ -93,6 +93,7 @@ html {
    #home {
     background: url("../images/07.jpg") no-repeat top center/cover;
   }
+
 /*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
 /* About Me */
@@ -104,17 +105,15 @@ html {
    }
 /* Information Section */
    #about #info {
-    border: 1px solid red;
     width: 35%;
-    background: #2A3443;
-    border-bottom-left-radius: 15rem;
-    border-top-left-radius: 15rem;
+    background: rgba(41, 51, 66, 0.44);
+    border-bottom-left-radius: 5rem;
+    border-top-left-radius: 5rem;
     height: 75%;
   }
 
   #dp {
     height: 30%;
-    border: 1px solid red;
   }
 
   #dps {
@@ -127,7 +126,6 @@ html {
 
   #bio_name, #icons {
     height: 10%;
-    border: 1px solid blue;
   }
 
   #icons {
@@ -142,19 +140,23 @@ html {
     height: auto;
 }
 
+#email_icon:hover,#linkedin_icon:hover,#github_icon:hover,#codepen_icon:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em yellow;
+  transform: translateY(-0.25em);
+  transition: 0.25s;
+}
+
 /* Biography Section */
   #about #bio{
-    border: 1px solid red;
     width: 65%;
     height: 75%;
-    background: #2A3443;
-    border-bottom-right-radius: 15rem;
-    border-top-right-radius: 15rem;
+    background: rgba(41, 51, 66, 0.44);
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
   }
 
   #title_bio, #detail_bio {
     height: 10%;
-    border: 1px solid blue;
   }
 
   #title_bio {
@@ -200,7 +202,6 @@ html {
     justify-content: flex-start;
     align-items: flex-start;
     height: 50%;
-    border: 1px solid blue;
   }
 
   #para_bio p {
@@ -211,12 +212,6 @@ html {
 }
 
 /*---------------------------------------------------------------------*/
-/* Services */
-   
-   section#services {
-     background: url("../images/06.jpg") no-repeat top center/cover;
-   }
-
 /*---------------------------------------------------------------------*/
 /* Portfolio */  
    section#portfolio {
@@ -224,28 +219,20 @@ html {
   }
 
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 /* Contact */ 
    section#contact {
      background: url("../images/05.jpg") no-repeat top center/cover;
    }
 
+/*---------------------------------------------------------------------*/   
 /*---------------------------------------------------------------------*/
-
-   /* Button */
-   .raise:hover,
-    .raise:focus {
-      box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-      transform: translateY(-0.25em);
-  }
-
-/*
-    border: 1px solid #ffa260;
-    margin-top: 20px;
-    width: 200px;
-    height: 50px;
-    background: none;
-    color: white;
-*/
+/* Button */
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
 
 button {
   background: none;
@@ -259,12 +246,23 @@ button {
   transition: 0.25s;
 }
 
+.buttons {
+}
+
 button:hover {
   color: white;
   border: 3px solid #ffe260;
   box-shadow: 0 0.5em 0.5em -0.4em yellow;
   transform: translateY(-0.25em);
   transition: 0.25s;
+}
+
+button:active {
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+  background: #ffa260;
+
 }
 
 .button_link {
@@ -276,9 +274,8 @@ button:hover {
   color: white;
 }
 
-#hire_me {
-  margin-right: 10px;
-  width: 140px;
-  color: white;
-  text-decoration: none;
+#nav_button {
+  margin: 5px;
+  margin-right: 50px;
+  width: 10rem;
 }
