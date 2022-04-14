@@ -376,9 +376,6 @@ button {
   transition: 0.25s;
 }
 
-.buttons {
-}
-
 button:hover {
   color: white;
   border: 3px solid #ffe260;
