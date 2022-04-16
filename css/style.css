@@ -140,7 +140,7 @@ html {
     height: auto;
 }
 
-#email_icon:hover,#linkedin_icon:hover,#github_icon:hover,#codepen_icon:hover {
+#email_icon:hover,#linkedin_icon:hover,#github_icon:hover,#codepen_icon:hover,#link_icon:hover {
   box-shadow: 0 0.5em 0.5em -0.4em yellow;
   transform: translateY(-0.25em);
   transition: 0.25s;
@@ -230,6 +230,7 @@ html {
     flex-direction: row;
     height: 10%;
     margin-top: 10%;
+    margin-bottom: 2.5%;
   }
     #title_portfolio div {
       margin-left: 1%;
@@ -337,10 +338,20 @@ html {
       #languages > span {
         color: #8B96B3;
         width: 15%;
-        border: 1px solid red;
       }
 
-    
+    #project_icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }
+      #project_icons > #link_icon {
+        display: flex;
+        justify-content: center;
+        padding-left: 1rem;
+      }
 
 
 /*---------------------------------------------------------------------*/
