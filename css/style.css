@@ -124,7 +124,7 @@ html {
     height: auto;
   }
 
-  #bio_name, #icons {
+  #bio_name, #icons,#cvlink  {
     height: 10%;
   }
 
