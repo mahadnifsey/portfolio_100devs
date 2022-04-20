@@ -28,15 +28,28 @@ html {
      font-size: 1.5rem;
      width: 75%;
    }
-   
+
    .navbar {
      position: fixed;
      top: 0;
      z-index: 1;
      display: flex;
+     align-items: center;
      width: 100%;
-     height: 60px;
+     height: 5%;
      background: rgba(0,0,0,0.7);
+     transition: top 0.3s; /* Transition effect when sliding down (and up) */
+   }
+
+    #nf_logo {
+      display: flex;
+      align-items: center;
+      margin-left: 2%;
+    }
+
+    #nf_logo > img {
+     width: 35%;
+     height: auto;
    }
    
    .navbar ul {
@@ -58,7 +71,7 @@ html {
    }
    
    .navbar ul li a:hover {
-     color: skyblue;
+     color: #ABDE00;
    }
    
    section { /* Controls all sections and their positions. */
@@ -100,8 +113,9 @@ html {
 #about {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background: url("../images/02.jpg") no-repeat top center/cover;
-  padding:5% 0%; /* Avoid content overlap with nav. */
+  padding:0% 0%; /* Avoid content overlap with nav. */
 }
 /* Information Section */
    #about #info {
@@ -109,11 +123,12 @@ html {
     background: rgba(41, 51, 66, 0.44);
     border-bottom-left-radius: 5rem;
     border-top-left-radius: 5rem;
-    height: 75%;
+    height: 60%;
+    margin-left: 5%; /* 5% padding on each side. */
   }
 
   #dp {
-    height: 30%;
+    height: 40%; /* Controls the height of the display picture. */
   }
 
   #dps {
@@ -149,10 +164,11 @@ html {
 /* Biography Section */
   #about #bio{
     width: 65%;
-    height: 75%;
+    height: 60%;
     background: rgba(41, 51, 66, 0.44);
     border-bottom-right-radius: 5rem;
     border-top-right-radius: 5rem;
+    margin-right: 5%; /* 5% padding on each side. */
   }
 
   #title_bio, #detail_bio {
@@ -201,7 +217,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 50%;
+    height: 60%;
   }
 
   #para_bio p {
@@ -247,7 +263,8 @@ html {
   #portfolio > #project_1 {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 80%; /* 10% padding on each side. */
+    border: 4px dotted black;
   }
 
   #portfolio > #project_1 > section {
@@ -531,8 +548,7 @@ button:active {
   color: white;
 }
 
-#nav_button {
-  margin: 5px;
-  margin-right: 50px;
+#nav_button { /* 'Hire Me' navigation button. */
+  margin-right: 3rem;
   width: 10rem;
 }
