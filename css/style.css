@@ -88,17 +88,13 @@ html {
 /*---------------------------------------------------------------------*/
 /* Home Section */
    #home h1 {
-     font-size: 3rem;
+     font-size: 5rem;
    }
 
    #home h1 span {
      color: #ABDE00; 
    }
 
-   section h1 {
-     font-size: 4rem;
-   }
-   
    section p {
      font-size: 1.5rem;
    }
@@ -143,16 +139,24 @@ html {
     height: 10%;
   }
 
+  #bio_name h1 {
+    font-size: 4rem;;
+  }
+
   #icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     max-width: 75%;
+    border:1px solid red;
+    padding: 1rem;
   }
 
   #icons div img { /* Social Media Icons */
-    width: 3rem;
+    width: 4rem;
     height: auto;
+    padding: 0.5rem;
+    border:1px solid red;
 }
 
 #email_icon:hover,#linkedin_icon:hover,#github_icon:hover,#codepen_icon:hover,#link_icon:hover {
@@ -194,13 +198,13 @@ html {
   }
 
   #title_icons {
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 2rem;
     background-color: #ABDE00;
-    border: 4px solid #ABDE00;
+    border: 0.25rem solid #ABDE00;
     box-shadow: 0 0 0 5px #2A3443 inset;
     box-sizing: border-box;
-    margin-top: 5px;
+    margin-top: 0.2rem;
   }
 
   #detail_bio {
@@ -217,7 +221,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 60%;
+    height: 75%;
   }
 
   #para_bio p {
