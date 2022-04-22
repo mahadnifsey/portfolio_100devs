@@ -125,8 +125,12 @@ section { /* Controls all sections and their positions. */
       .project_icons {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 12%;
-        margin-top: 5%;
+        justify-content: flex-end;
+        width: 100%;
+        border: 1px solid red;
+      }
+
+      .project_icons img {
+        width: 5%;
+        padding: 3% 0% 0% 5%;
       }
