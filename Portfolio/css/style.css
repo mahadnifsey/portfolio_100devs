@@ -133,4 +133,5 @@ section { /* Controls all sections and their positions. */
       .project_icons img {
         width: 5%;
         padding: 3% 0% 0% 5%;
+        border: 1px solid black;
       }
