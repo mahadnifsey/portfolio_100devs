@@ -115,23 +115,26 @@ html {
 }
 /* Information Section */
    #about #info {
+    display: flex;
+    justify-content: space-around;
     width: 35%;
     background: rgba(41, 51, 66, 0.44);
     border-bottom-left-radius: 5rem;
     border-top-left-radius: 5rem;
     height: 60%;
     margin-left: 5%; /* 5% padding on each side. */
+    padding: 1rem;
   }
 
   #dp {
-    height: 40%; /* Controls the height of the display picture. */
+    height: 50%; /* Controls the height of the display picture. */
   }
 
   #dps {
-}
+  }
 
   #dps img {
-    width: 20rem;
+    width: 14rem; /* Controls the size of the display picture. */
     height: auto;
   }
 
@@ -140,23 +143,21 @@ html {
   }
 
   #bio_name h1 {
-    font-size: 4rem;;
+    font-size: 3rem;
   }
 
   #icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    max-width: 75%;
-    border:1px solid red;
+    justify-content: space-between;
+    max-width: 80%;
     padding: 1rem;
   }
 
   #icons div img { /* Social Media Icons */
-    width: 4rem;
+    width: 3rem;
     height: auto;
     padding: 0.5rem;
-    border:1px solid red;
 }
 
 #email_icon:hover,#linkedin_icon:hover,#github_icon:hover,#codepen_icon:hover,#link_icon:hover {
@@ -173,6 +174,7 @@ html {
     border-bottom-right-radius: 5rem;
     border-top-right-radius: 5rem;
     margin-right: 5%; /* 5% padding on each side. */
+    padding: 1rem;
   }
 
   #title_bio, #detail_bio {
@@ -212,7 +214,7 @@ html {
     align-items: flex-start;
   }
 
-  #detail_bio h4 {
+  #detail_bio h4 {ma
     font-weight: 700;
     font-size: 1.5rem; 
   }
@@ -227,7 +229,7 @@ html {
   #para_bio p {
     font-weight: 400;
     white-space: pre-line;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: left;
 }
 
@@ -236,11 +238,11 @@ html {
 /* Portfolio */  
 #portfolio {
     background: url("../images/02.jpg") no-repeat top center/cover;
-    border: 1px solid red;
+    width: 100%;
+    height: 200%;
   }
 
 #portfolio section { /* Controls all sections inside portfolio. */
-  border: 1px solid blue;
 }
   /*---------------------------------------------------------------------*/
   /* Portfolio - Title Section */ 
@@ -264,15 +266,14 @@ html {
     }
   /*---------------------------------------------------------------------*/
   /* Portfolio - Project 1 Section */ 
-  #portfolio > .project_1 {
+  #portfolio > .project_block {
     display: flex;
     flex-direction: row;
+    margin-bottom: 3rem;
     width: 80%; /* 10% padding on each side. */
-    border: 4px dotted black;
   }
 
-  #portfolio > .project_1 > section {
-    border: 1px solid red;
+  #portfolio > .project_block > section {
     height: 100%;
   }
   
@@ -294,9 +295,10 @@ html {
     align-items: flex-end;
     justify-content: flex-start;
     padding-right: 1%;
-    background: rgba(41, 51, 66, 0.44);
+    /* background: rgba(41, 51, 66, 0.44); */
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
+    border: 1px solid green;
   }
     .project_heading {
       margin-top: 10%;
@@ -345,11 +347,18 @@ html {
       .project_icons {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 12%;
+        width: 20%;
+        height: 10%;
+        border: 1px solid red;
         margin-top: 5%;
       }
+        .project_icons img {
+          width: 2rem;
+          height: 2rem;
+          padding: 1rem;
+        }
 
 /*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
@@ -497,7 +506,7 @@ button {
   font: inherit;
   line-height: 1;
   margin: 0.5em;
-  padding: 1em 2em;
+  padding: 1em 1em;
   color: #ffa260;
   transition: 0.25s;
   cursor: pointer;
