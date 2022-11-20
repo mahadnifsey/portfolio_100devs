@@ -396,7 +396,7 @@ h3 > #out1 {
   max-width: 55rem;
   max-height: 60rem;
   border: 1px solid gold;
-  margin: 0rem auto 1rem;
+  margin: 0rem auto 10rem;
 }
 
 /* Project Section */
@@ -516,7 +516,6 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 #linKs > a {
   color: #a8b2d1;
-  border: 1px solid red;
   margin-right: -0.1rem;
   margin-left: 0.5rem;
 }
@@ -530,13 +529,20 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: auto;
 }
 
+
+
+
 /* Contact Section */
 /*==================*/
-.contactSection {
-  max-width: 55rem;
-  max-height: 60rem;
-  border: 1px solid gold;
+#contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40rem;
+  max-height: 30rem;
   margin: 0rem auto 1rem;
+  border: 1px solid green;
   color: #b3aca7;
 }
 
@@ -624,7 +630,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 
 header {
   position: relative;
-  margin: 100px 0 25px 0;
+  margin: 1rem auto 0;
   font-size: 2.3em;
   text-align: center;
   letter-spacing: 7px;
@@ -634,7 +640,7 @@ header {
 #form {
   position: relative;
   width: 500px;
-  margin: 50px auto 100px auto;
+  margin-bottom: 1rem;
 }
 
 input {
@@ -713,23 +719,29 @@ textarea:hover {
 
 
 
+/* Footer */
+/* =============== */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border:1px solid red;
+  margin: 0 0;
+  height: 2%;
+}
 
+footer #linKs {
+  display: flex;
+  justify-content: space-around;
+}
 
+footer p {
+  color: #e2dedb;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 0.75rem;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -781,6 +793,7 @@ textarea:hover {
 }
 
 @media (max-width: 52rem){
+  #workSection {margin:4rem auto 3rem;}
   #projectName>.box{flex-direction:column;align-items:center;width:100%;}
   .box1,.box2{width:100%;margin:0;}
   .box1{height:20rem;}
@@ -788,6 +801,14 @@ textarea:hover {
   .box2{justify-content:flex-start;height:21rem;margin-top:-19rem;}
   /* .box2>h3,h1,#tOols,#linKs{margin-right:1rem;} */
   #infoText{width: 100%;}
+  #contactSection {max-width: 100%;margin:15rem 2.5rem 0rem;}
+  #contactSection header{font-size: 1.5rem;}
+  #contactSection>form{display:flex;flex-direction:column;justify-content:center;align-items:center;}
+  form input,textarea{width: 20rem;}
+  #submit{width:22rem;}
+  footer{height:5rem;margin-top: 1rem;}
+  footer #linKs{margin-bottom:-0.5rem;}
+  footer p{margin: 0;}
 }
 
 /*Shrink to Mobile and Hide Navigation*/
