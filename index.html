@@ -2,195 +2,256 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
+    	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-		<title>Mahad Nifsey Portfolio</title>
+		<title>Mahad Nifsey - Software Engineer</title>
 
 		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-        <!-- Controls Everything this container -->
-		<div class="container">
-        <nav class="navbar">
-            <a id="nf_logo" href="."><img src="images/nf_logo.png"alt="Logo"></a> 
-            <ul>
-                <li><a href="#about">01. About</a></li>
-                <li><a href="#experience">02. Experience</a></li>
-                <li><a href="#portfolio">03. Portfolio</a></li>
-                <li><a href="#contact">04. Contact</a></li>
-                <li><a href="#contact">CV</a></li>
-            </ul>
-        </nav>
-<!-- Home Section -->
-    <section id="home">
-        <h1>Hello, I'm <span>Mahad Nifsey</span>.</h1>
-	    <h1>I'm a full-stack Web developer.</h1>
+		<!-- Navigation Section -->
+		<nav class="nav">
+			<div id="navLogo">
+			  <a href="index.html"><div id="iMg"><span>M.N</span></div></a>
+			</div>
+			<div class="menu-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="navRight">
+				<li><a href="#aboutSection" class="nav__link">01. About</a></li>
+				<li><a href="#experienceSection" class="nav__link">02. Experience</a></li>
+				<li><a href="#workSection" class="nav__link">03. Work</a></li>
+				<li><a href="#contactSection" class="nav__link">04. Contact</a></li>
+				<li><a class="nav__link"><button>Resume</button></a></li>
+			</ul>
+			<!-- <div id="navRight">
+				<a href="#aboutSection" class="nav__link">01. About</a>
+				<a href="#experienceSection" class="nav__link">02. Experience</a>
+				<a href="#workSection" class="nav__link">03. Work</a>
+				<a href="#" class="nav__link">04. Contact</a>
+				<a href="#" class="nav__link"><button>Resume</button></a>
+			</div> -->
+		  </nav>
+			<!-- Title Section -->
+			<section id="titleSection">
+			<div id="titleOne"><p>Hi, my name is</hp></div>
+			<div id="titleTwo">
+				<h1>Mahad Nifsey.</h1>
+				<h1>A passionate web designer.</h1>
+			</div>
+			<div id="titlePara"><p>Former Mechanical Design Engineer turned software engineer, inspired to build exceptional digital experiences.</p></div>
+			<div class="titleLinks">
+				<a href="#workSection"><p>view my work</p></a>
+				<div class="underLine"></div>
+			</div>
+			</section>
 
-    <div class="buttons">
-        <a class="button_link" href="#about"><button>About Me</button></a>
-        <a class="button_link" href="#portfolio"><button>View My Work</button></a>
-        <a class="button_link" href="#contact"><button>Contact</button></a>
-    </div>
+			<!-- About Section -->
+			<section class="generalSection" id="aboutSection">
+			<section class="sectionTitle">
+				<h2><span id="diffCol">01. </span>About Me</h2>
+				<div class="titleLine"></div>
+			</section>
+			<section id="aboutSection-main">
+					<div id="aboutSection-para"><p>Hello! My name is Brittany and I enjoy creating things that live on the internet. 
+						My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes —
+						turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
 
-    </section>
+						<p>Fast-forward to today, and I’ve had the privilege of working at <br><span id="diffCol">an advertising agency, 
+						a start-up, a huge corporation</span>, and <br><span id="diffCol">a student-led design studio</span>. 
+						My main focus these days is building accessible, inclusive products and digital experiences 
+						at <span id="diffCol">Upstatement</span> for a variety of clients.</p>
 
-<!-- About Section -->
-    <section id="about">
-        <section id="info">
-            <section id="dp">
-                <div id="dps"><img src="images/icons/01.png" alt="display_picture"></div>
-            </section>
+						<p>I also recently <span id="diffCol">launched a course</span> that covers everything you need to build a web
+						app with the Spotify API using Node & React.</p>
 
-            <section id="bio_name"><h1>Mahad Nifsey</h1></section>
-            
-            <section id="icons">
-                <div id="email_icon"><img src="images/icons/email_icon.png"alt="email icon"></div>
-                <div id="linkedin_icon"><img src="images/icons/linkedin_icon.png"alt="linkedin icon"></div>
-                <div id="github_icon"><img src="images/icons/github_icon.png"alt="github icon"></div>
-                <div id="codepen_icon"><img src="images/icons/codepen_icon.png"alt="codepen icon"></div>
-            </section>
-            <section id="cvlink"><a class="button_link" href="Pages_docs/downloads/CV - Mahad Nifsey.pdf" download="cv" alt="My CV"><button>Download My CV</button></a></section>
-        </section>
+						<p>Here are a few technologies I’ve been working with recently:</p>
 
+						<ul>
+							<li><span>JavaScript (ES6+)</span></li>
+							<li><span>React</span></li>
+							<li><span>Node.js</span></li>
+							<li><span>TypeScript</span></li>
+							<li><span>Eleventy</span></li>
+							<li><span>WordPress</span></li>
+						</ul>
+					</div>
+					<div id="aboutSection-image">
+						<div class="dp-content"></div>
+					</div>
+			</section>
+			</section>
 
-        <section id="bio">
-            <section id="title_bio">
-                <div id="title_icons"></div>
-                <h1>ABOUT</h1>
-            </section>
+		<!-- Experience Section -->
+		<section class="generalSection" id="experienceSection">
+		<section class="sectionTitle">
+			<h2><span id="diffCol">02. </span>Experience</h2>
+			<div class="titleLine"></div>
+		</section>
+		<section class="experienceSection-main">
+			<div id="scroll">
+				<div id="experienceSection-buttons">
+					<a class="slider"><div id="slide"></div><button class="exButton" id="btn" value="#100DEVS"><span>#100DEVS</span></button></a>
+					<a class="slider"><div id="slide"></div><button class="exButton" id="btn" value="Freelance"><span>Freelance</span></button></a>
+					<a class="slider"><div id="slide"></div><button class="exButton" id="btn" value="STARCO/KENDA"><span>STARCO/KENDA</span></button></a>
+					<a class="slider"><div id="slide"></div><button class="exButton" id="btn" value="Y.S.P"><span>Y.S.P</span></button></a>
+					<a class="slider"><div id="slide"></div><button class="exButton" id="btn" value="Intervate Ltd"><span>Intervate Ltd</span></button></a>
+				</div>
+			</div>
+			<div id="history">
+				<h3><span id="out0"></span><span id="out1"></span></h3>
+				<p id="out2"></p>
+				<p id="myItemList"></p>
+				
+			<!--Upstatement -->
+				<ul id="his-Up" class="out3">
+					<li>Collaborated with a team of developers to build modern and responsive web Applications using best practices.</li>
+					<li>Build semantically structured full stack web applications for better accessibility and support.</li>
+					<li>Applied agile methodologies like SCRUM for project management.</li>
+					<li>Created and maintained code base for reusability and efficient teamwork.</li>
+					<li>Leading a team of developers in various projects from concept to launch with a multitude of different stakeholders.</li>
+				</ul>
+				<!--Scout-->
+				<ul id="his-Sc" class="out3">
+					<li>Meeting with the prospective clients to review website, and gather the client's specifications for new or existing websites.</li>
+					<li>Built various client projects using different products such as HTML, CSS, SCSS, Javascript and either Node.JS or React.</li>
+					<li>Testing projects in various environments such as different browsers and mobile devices to ensure compatibility and responsiveness.</li>
+					<li>Assisted customers with redesigning and maintaining customisable sites such as WordPress, Webflow & Shopify.</li>
+				</ul>
+				<!--Apple-->
+				<ul id="his-Ap" class="out3">
+					<li>Development of 2D & 3D technical models for Internal Sales and Client requests.</li>
+					<li>Implementation & development of new CAD techniques.</li>
+					<li>Verification and validation of FEA models with experimental analysis using Python.</li>
+					<li>Management of design workflow and database QA testing. Administrator of PDM System. Generating KPI stats using Solidworks Api.</li>
+					<li>Lead weekly and monthly design meetings, reporting KPI & performances.</li>
+				</ul>
+				<!--Scout-->
+				<ul id="his-Sc2" class="out3">
+					<li>Developed and maintained a full-stack web app with over +1000 daily users.</li>
+					<li>Incorporated semantic support for accessibility and inclusion.</li>
+					<li>Worked with UX/UI designers and collaborated with a team of developers.</li>
+					<li>Maintained blog entries entries and user account access. managed maintenace and new content.</li>
+				</ul>
+					<!--Starry-->
+				<ul id="his-St" class="out3">
+					<li>Design Engineer role in developing technical drawings for internal products.</li>
+					<li>Developed and maintained an operational database for testing results using Excel VBA and SQL queries.</li>
+					<li>Monitored the performance of gasification units and reduce by-products.</li>
+					<li>Project Managed CE marking for various products & plant design file.</li>
+					<li>Leading Successful audits to achieve ENplus certification for all Pellet products.</li>
+				</ul>
+			</div>
+			</section>
+		</section>
 
-            <section id="detail_bio">
-                <h4>A little about myself</h4>
-            </section>
+		<!-- work Section -->
+		<section class="generalSection" id="workSection">
+			<section class="sectionTitle">
+				<h2><span id="diffCol">03. </span>Projects</h2>
+				<div class="titleLine"></div>
+			</section>	
+			<!-- First Project -->				
+			<section id="projectName">
+				<div class="box">
+					<div class="box1">
+						<div class="imaGe"></div>
+					</div>
+					<div class="box2">
+						<h3>Featured Project</h3>
+						<a href="https://www.producthunt.com/products/mystery-gift-bot"target="_blank"rel="noreferrer"><h1>Thumbnail Maker</h1></a>
+						<div id="infoText">
+							<p>Content is king, so this <span id="diffCol">Thumbnail Maker</span> helps content creators design the perfect video thumbnail in minutes! </p>
+						</div>
+						<ul id="tOols">
+							<li>CSS</li>
+							<li>JS</li>
+							<li>Node.js</li>
+							<li>MangoDB</li>
+						</ul>
+						<div id="linKs">
+						<!--External Link-->
+							<a href="https://www.producthunt.com/products/mystery-gift-bot"aria-label="External_link"target="_blank"rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
+				
+			<!-- Second Project -->				
+			<section id="projectName">
+				<div class="box">
+					<div class="box1">
+						<div class="imaGe"></div>
+					</div>
+					<div class="box2">
+						<h3>Featured Project</h3>
+						<a href="https://www.producthunt.com/products/mystery-gift-bot"target="_blank"rel="noreferrer"><h1>Thumbnail Maker</h1></a>
+						<div id="infoText">
+							<p>Content is king, so this <span id="diffCol">Thumbnail Maker</span> helps content creators design the perfect video thumbnail in minutes! </p>
+						</div>
+						<ul id="tOols">
+							<li>CSS</li>
+							<li>JS</li>
+							<li>Node.js</li>
+							<li>MangoDB</li>
+						</ul>
+						<div id="linKs">
+						<!--External Link-->
+							<a href="https://www.producthunt.com/products/mystery-gift-bot"aria-label="External_link"target="_blank"rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <section id="para_bio">
-                <div>
-                    <p>I’m a Front-End Developer seeking a challenging opportunity in a versatile industry. Motivated to progress my personal development in this field that I fell in love with after spending over 10 years as a mechanical design engineer. These two disciplines often overlapped, which further heightened my curiosity. Over the past few years during the pandemic and mandatory lockdowns, I started building my own projects as well as supporting my friends with their own start-ups.</p>
-                    <br>
-                    <p>As a mechanical design engineer, I have experience in various industries from; Automotive, Industrial Agriculture, Oil and Gas, Renewable Energies and Consumer Products. With these experiences, I had found various transferrable skills that appeared complimentary for a career in web development. I enjoy problem solving, building client relationships, managing projects and products, as well as research and development. I am excited for a career change and believe I am ready to apply my passion for coding to a exciting engineering team to develop amazing solutions.</p>
-                </div>
-            </section>
-        </section>
-    </section>
-<!-- Portfolio Section -->
-    <section id="portfolio">
-        <!-- Title Section -->
-        <section id="title_portfolio">
-            <div id="title_icons"></div> 
-            <h1>Projects I've Built</h1>
-        </section>
+			<!-- Third Project -->				
+			<section id="projectName">
+				<div class="box">
+					<div class="box1">
+						<div class="imaGe"></div>
+					</div>
+					<div class="box2">
+						<h3>Featured Project</h3>
+						<a href="https://www.producthunt.com/products/mystery-gift-bot"target="_blank"rel="noreferrer"><h1>Mystery Gift Bot</h1></a>
+						<div id="infoText">
+							<p><span id="diffCol">Mystery Gift Bot</span>, is a minimal real-time chat application to help users with gift ideas. Special occassions such as, <span id="diffCol">Secret Santa</span> and <span id="diffCol">birthdays</span>. As seen on <span id="diffCol">Product Hunt</span>.</p>
+						</div>
+						<ul id="tOols">
+							<li>CSS</li>
+							<li>JS</li>
+							<li>Node.js</li>
+							<li>MangoDB</li>
+						</ul>
+						<div id="linKs">
+						<!--External Link-->
+							<a href="https://www.producthunt.com/products/mystery-gift-bot"aria-label="External_link"target="_blank"rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <!-- Project 1 Section -->
-        <section class="project_block">
-            <!-- Project 1 Section - Project Image -->
-            <section class="project_image">
-                <img class="image_main" src="images/project/yt_thumb.gif" alt="Project 1">
-            </section>
+		</section>
 
-            <!-- Project 1 Section - Project Details-->
-            <section class="project_details">
-                <span class="project_heading">Featured Project</span>
-                <h2>Thumbnail Maker</h2>
-                <div class="project_description">
-                    <p>Content is king, so this thumbnail site helps content creators design the perfect <span>video thumbnails</span> in minutes! Perfect for <span>Youtube</span>, <span>TikTok</span> & many more!</p>
-                </div>
-                <div class="languages">
-                    <span>HTML 5.0</span>
-                    <span>CSS</span>
-                    <span>Node JS</span>
-                </div>
-                <div class="project_icons">
-                    <img id="github_icon" src="images/icons/github_icon.png"alt="github icon">
-                    <img id="link_icon" src="images/icons/link_icon.png"alt="link icon">
-                </div>
-            </section>
-        </section>
+		<!-- Contact Form Section -->
+		<section class="contactSection">
+			<header>Let's Connect!</header>
 
-        <!-- Project 2 Section -->
-        <section class="project_block">
-            <!-- Project 1 Section - Project Image -->
-            <section class="project_image">
-                <img class="image_main" src="images/project/Mystic_8.gif" alt="Project 2">
-            </section>
+			<form 
+				name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field"
+				id="form" class="topBefore">
+				<input name="bot-field" style="display:none;">
+				<input id="name" type="text" placeholder="NAME">
+				<input id="email" type="text" placeholder="E-MAIL">
+				<textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+				<input id="submit" type="submit" value="GO!">
+			</form>
 
-            <!-- Project 1 Section - Project Details-->
-            <section class="project_details">
-                <span class="project_heading"></span>
-                <h2>Mystic 8 Ball</h2>
-                <div class="project_description">
-                    <p>Type your question and the <span>Mystic 8 Ball</span>  will reveal the answer!</p>
-                </div>
-                <div class="languages">
-                    <span>HTML 5.0</span>
-                    <span>CSS</span>
-                </div>
-                <div class="project_icons">
-                    <img id="github_icon" src="images/icons/github_icon.png"alt="github icon">
-                    <img id="link_icon" src="images/icons/link_icon.png"alt="link icon">
-                </div>
-            </section>
-        </section>
-
-        <!-- Project 3 Section -->
-        <section id="project_3">
-            <h1>Project 3</h1>
-        </section>
-        
-    </section>
-
-
-<!-- Contact Section -->
-    <section id="contact">
-        <h1>Contact Us</h1>
-        <!-- Contact Form -->
-        <div class="container">
-            <div class="row">
-                    <h4 style="text-align:center">I'd like to hear from you!</h4>
-            </div>
-            <div class="row input-container">
-                    <div class="col-xs-12">
-                        <div class="styled-input wide">
-                            <input type="text" required />
-                            <label>Name</label> 
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="styled-input">
-                            <input type="text" required />
-                            <label>Email</label> 
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="styled-input" style="float:right;">
-                            <input type="text" required />
-                            <label>Phone Number</label> 
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="styled-input wide">
-                            <textarea required></textarea>
-                            <label>Message</label>
-                        </div>
-                    </div>
-                    <a class="col-xs-12" href="#contact">
-                        <button id="nav_button submit-btn">Send Message</button>
-                    </a>
-            </div>
-        </div>
-        
-
-    </section>
-    </div>
-
-    <footer></footer>
-
-    <script type="text/javascript" src="js/main.js"></script>
+		</section>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
-
