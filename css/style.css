@@ -225,6 +225,10 @@ button:hover {
     font-family: Helvetica, sans-serif;
 }
 
+#aboutSection-para > p > #diffCol {
+  font-size: 1rem;
+}
+
 #aboutSection-para > ul {
     display: grid;
     justify-content: flex-start;
