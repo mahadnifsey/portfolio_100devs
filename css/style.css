@@ -96,7 +96,7 @@ button:hover {
   height: 100vh;
   max-width: 55rem;
   margin: -2rem auto 1rem;
-  border: 1px solid white;
+
 }
 
 #titleOne {
@@ -129,7 +129,6 @@ button:hover {
   color: #8892b0;
   margin-bottom: 3rem;
   max-width:33rem;
-  border: 1px solid red;
 }
 
 .titleLinks {
@@ -173,7 +172,6 @@ button:hover {
   flex-direction: column;
   margin: 0 auto;
   width: auto;
-  border: 1px solid red;
 }
 
 /*About Section*/
@@ -191,7 +189,6 @@ button:hover {
   margin-bottom: 1rem;
   Width: 100%;
   height: 3rem;
-  border: 1px solid green;
   color: white;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
@@ -214,7 +211,6 @@ button:hover {
 #aboutSection-para {
     color: #8892b0;
     margin-right: 2rem;
-    border: 1px solid red;
     width: 60%;
     margin-right: 2rem;
 }
@@ -243,7 +239,6 @@ button:hover {
     align-self: flex-start;
     width: 100%;
     margin: 0;
-    border: 1px solid red;
     font-size: 0.75rem;
     list-style-type: square !important;
     color:#FFED64;
@@ -395,7 +390,6 @@ h3 > #out1 {
 #workSection {
   max-width: 55rem;
   max-height: 60rem;
-  border: 1px solid gold;
   margin: 0rem auto 10rem;
 }
 
@@ -405,7 +399,6 @@ h3 > #out1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid red;
   height: 100%;
   margin-bottom:1rem;
 }
@@ -427,13 +420,47 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   height: 20rem;
   width: 60rem;
   margin-right:-5rem
 }
 
+/* First Project */
 .imaGe {
+  width: 100%;
+  height: 80%;
+  background-image: url('../img/project-images/qas-2.png');
+  border-radius: 0.5rem;
+  transition: .8s ease;
+  -moz-transition: .8s ease;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+  .imaGe:hover { 
+    background-image: url('../img/project-images/qas-1.png');
+    transition: .8s ease;
+    -moz-transition: .8s ease;
+  }
+
+/* Second Project */
+.imaGe1 {
+  width: 100%;
+  height: 80%;
+  background-image: url('../img/project-images/tnm-2.png');
+  border-radius: 0.5rem;
+  transition: .8s ease;
+  -moz-transition: .8s ease;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+  .imaGe1:hover { 
+    background-image: url('../img/project-images/tnm-1.png');
+    transition: .8s ease;
+    -moz-transition: .8s ease;
+  }  
+
+/* ThirdProject */
+.imaGe2 {
   width: 100%;
   height: 80%;
   background-image: url('../img/project-images/mgb_2.png');
@@ -443,18 +470,17 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-repeat:no-repeat;
   background-size:cover;
 }
-  .imaGe:hover { 
+  .imaGe2:hover { 
     background-image: url('../img/project-images/mgb_1.png');
     transition: .8s ease;
     -moz-transition: .8s ease;
-  }
-
+  } 
+  
 .box2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;
-  border: 1px solid red;
   border-radius: 0 1rem 1rem 0;
   margin: 0;
   height: 100%;
@@ -486,7 +512,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 7rem;
   width: 27rem;
 }
-  #infoText>p{font-size:0.9rem;text-align:right;color:#a8b2d1;line-height:1.5rem;width:100%;border:1px solid red;margin:1rem;}
+  #infoText>p{font-size:0.9rem;text-align:right;color:#a8b2d1;line-height:1.5rem;width:100%;margin:1rem;}
   #diffCol{color:#FFED64;font-size:0.75rem;}
 
 #tOols {
@@ -509,7 +535,6 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 #linKs {
   display: flex;
   justify-content: flex-end;
-  border: 1px solid green;
   height: 1.25rem;
   width: 6rem;
 }
@@ -542,7 +567,6 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   max-width: 40rem;
   max-height: 30rem;
   margin: 0rem auto 1rem;
-  border: 1px solid green;
   color: #b3aca7;
 }
 
@@ -568,7 +592,6 @@ footer{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border:1px solid red;
   margin: 0 0;
   height: 2%;
 }
@@ -613,25 +636,24 @@ footer p {
 
   /*About Section*/
   #aboutSection-main {flex-direction: column;justify-content: center;align-items: center;}
-  #aboutSection-para {width:100%; margin: 0; border: 1px solid gold;}
+  #aboutSection-para {width:100%; margin: 0; }
 
   #aboutSection-para > ul {grid-template-columns: repeat(auto-fill, 5rem);grid-auto-rows: 2rem; column-gap: 7rem;}
   #aboutSection-para > ul > li {width: 8rem;}
-  #aboutSection-image{display:flex;justify-content:center;border:1px solid red;width:100%;}
+  #aboutSection-image{display:flex;justify-content:center;width:100%;}
   .dp-content {width: 15rem;height: 15rem;}
 
   /* Experience Section */
-  #experienceSection {border: 1px solid black;margin-bottom:6.5rem;}
+  #experienceSection {margin-bottom:6.5rem;}
   .experienceSection-main {display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;}
-  #scroll {width:100%;height:2rem;border:1px solid green;}
+  #scroll {width:100%;height:2rem;}
   #experienceSection-buttons {display:flex;flex-direction:row;justify-content:center;}
-  .slider {border:1px solid red;height:2rem;}
+  .slider {height:2rem;}
   #slide {display:none;}
   .exButton {padding:0 0.3rem;}
-  .exButton > span {color:red;font-size:2.5vw;}
-  #history {width:100%;height:25rem;border:1px solid white;}
-  #history > ul {margin-top: -1.5rem;margin-left: -1.8rem;border: 1px solid red;
-  }
+  .exButton > span {font-size:2.5vw;}
+  #history {width:100%;height:25rem;}
+  #history > ul {margin-top: -1.5rem;margin-left: -1.8rem;}
 }
 
 @media (max-width: 52rem){
@@ -678,7 +700,7 @@ footer p {
     #aboutSection-para > ul > li {
       width: 8rem;
     }
-    #aboutSection-image{display:flex;justify-content:center;border:1px solid red;width:100%;}
+    #aboutSection-image{display:flex;justify-content:center;width:100%;}
     .dp-content {
       width: 15rem;
       height: 15rem;
@@ -689,7 +711,7 @@ footer p {
 @media only screen and (min-width: 42rem) and (max-width: 62rem) {
   /* Title section*/
   #titleTwo {font-size: 3.5vw;}
-  #titlePara {color: red;}
+  /* #titlePara {color: red;} */
   #titleSection {max-width:75%;}
 
     /*General Section*/
@@ -697,7 +719,7 @@ footer p {
     
     /*About Section*/
     #aboutSection-main {display:flex;justify-content:space-between;}
-    #aboutSection-para { margin-right:1rem; border: 1px solid gold; width:60%;}
+    #aboutSection-para { margin-right:1rem; width:60%;}
     #aboutSection-para > ul {
       grid-template-columns: repeat(auto-fill, 6rem);
       grid-auto-rows: 2.5rem; column-gap: 3rem;
@@ -705,7 +727,7 @@ footer p {
     #aboutSection-para > ul > li {
       width: 7rem;
     }
-    #aboutSection-image{width: border: 1px solid red;}
+    /* #aboutSection-image{} */
     .dp-content {
       width: 15rem;
       height: 15em;
