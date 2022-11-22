@@ -744,3 +744,6 @@ footer p {
     /*Projects Section*/
 }
 
+@media screen and (min-width:320px) and (max-width:640px) {
+  #titlePara {color: red;}
+} 
