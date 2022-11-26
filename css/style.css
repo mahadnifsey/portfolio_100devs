@@ -596,7 +596,7 @@ footer{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 0 0;
+  margin: 0 0 2rem;
   height: 2%;
 }
 
@@ -662,14 +662,16 @@ footer p {
 
 @media (max-width: 52rem){
   #workSection {margin:4rem auto 3rem;}
-  #projectName>.box{flex-direction:column;align-items:center;width:100%;}
+  #projectName>.box{flex-direction:column;align-items:center;width:100%;box-shadow:none;margin-bottom: 1rem;}
   .box1,.box2{width:100%;margin:0;}
   .box1{height:20rem;}
-  .imaGe{background-image: url('../img/project-images/mgb_2.png');height: 100%;opacity: 0.1;z-index:-3;}
-  .box2{justify-content:flex-start;height:21rem;margin-top:-19rem;}
+  .imaGe{background-image: url('../img/project-images/qas-2.png');height: 100%;opacity: 0.1;z-index:-3;}
+  .imaGe1{background-image: url('../img/project-images/tnm-2.png');height: 100%;opacity: 0.1;z-index:-3;}
+  .imaGe2{background-image: url('../img/project-images/mgb_2.png');height: 100%;opacity: 0.1;z-index:-3;}
+  .box2{justify-content:flex-start;height:17rem;margin-top:-18rem;}
   /* .box2>h3,h1,#tOols,#linKs{margin-right:1rem;} */
   #infoText{width: 100%;}
-  #contactSection {max-width: 100%;margin:15rem 2.5rem 0rem;}
+  #contactSection {max-width: 100%;margin:8rem 2.5rem 0rem;}
   #contactSection header{font-size: 1.5rem;}
   #contactSection>form{display:flex;flex-direction:column;justify-content:center;align-items:center;}
   form input,textarea{width: 20rem;}
@@ -682,7 +684,7 @@ footer p {
 /*Shrink to Mobile and Hide Navigation*/
 @media only screen and (min-width: 35rem) and (max-width: 42rem) {
   #titleTwo {font-size: 3.5vw;}
-  #titlePara {color: green; }
+  /* #titlePara {color: green; } */
   #titleSection {max-width:85%;}
 
     /*General Section*/
@@ -744,6 +746,36 @@ footer p {
     /*Projects Section*/
 }
 
-@media screen and (min-width:320px) and (max-width:640px) {
-  #titlePara {color: red;}
-} 
+/* Test for Mobile */
+@media (min-width:320px) and (max-width:640px)  { 
+  /*Title Section*/
+  /* #titleTwo {font-size: 1rem;} */
+  #titleOne {font-size: 0.9rem;}
+  #titleTwo {font-size: 3.5vw;}
+  #titlePara {color: white; max-width: 100%;}
+  #titleSection {max-width:80%; height: 100vh; margin-bottom: 10rem;}
+
+  /*General Section*/
+  .generalSection,#aboutSection,#experienceSection,#workSection{max-width:80%;}
+
+  /*About Section*/
+  #aboutSection-main {flex-direction: column;justify-content: center;align-items: center;}
+  #aboutSection-para {width:100%; margin: 0; }
+
+  #aboutSection-para > ul {grid-template-columns: repeat(auto-fill, 5rem);grid-auto-rows: 2rem; column-gap: 7rem;}
+  #aboutSection-para > ul > li {width: 8rem;}
+  #aboutSection-image{display:flex;justify-content:center;width:100%;}
+  .dp-content {width: 15rem;height: 15rem;}
+
+  /* Experience Section */
+  #experienceSection {margin-bottom:6.5rem;}
+  .experienceSection-main {display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;}
+  #scroll {width:100%;height:2rem;}
+  #experienceSection-buttons {display:flex;flex-direction:row;justify-content:center;}
+  .slider {height:2rem;}
+  #slide {display:none;}
+  .exButton {padding:0 0.3rem;}
+  .exButton > span {font-size:2.5vw;}
+  #history {width:100%;height:25rem;}
+  #history > ul {margin-top: -1.5rem;margin-left: -1.8rem;}
+}
