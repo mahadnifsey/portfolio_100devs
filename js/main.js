@@ -1,19 +1,26 @@
+// Navigation Bar Compress into single Item.
+$('.menu-toggle').click(function(){
+  $(".nav").toggleClass("mobile-nav");
+  $(this).toggleClass("is-active");
+});
+
+
 // Hide/SHow navigation bar
 {
-    const nav = document.querySelector(".nav");
-    let lastScrollY = window.scrollY;
-  
-    window.addEventListener("scroll", () => {
-      if (lastScrollY < window.scrollY) {
-        nav.classList.add("nav--hidden");
-      } else {
-        nav.classList.remove("nav--hidden");
-      }
-  
-      lastScrollY = window.scrollY;
-    });
-  }
-  
+  const nav = document.querySelector(".navbar");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+      nav.classList.add("navbar--hidden");
+    } else {
+      nav.classList.remove("navbar--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+  });
+}
+
 
 // Experience Section
 let button = document.getElementsByTagName("button"),len = button.length,i;
@@ -35,49 +42,49 @@ hisUp.style.display = "block";
 
 // Function to switch workplace
 function click() {
-  // Title Automatic
-  out1.innerHTML = "@ "+(this.value);
-  // Dates
-  switch (this.value) {
-  case "#100DEVS":
-    out0.innerHTML = "Full Stack Engineer "
-    out2.innerHTML = "Jan 2022 - Present";
-    hisUp.style.display = "block"; 
-    changeMe(hisSc);changeMe(hisAp),changeMe(hisSc2),changeMe(hisSt),changeMe(hisMu);
-    break;
-  case "Freelance":
-    out0.innerHTML = "Front-End Developer "
-    out2.innerHTML = "Mar 2021 - Jan 2022";
-    hisSc.style.display = "block"; 
-    changeMe(hisUp);changeMe(hisAp),changeMe(hisSc2),changeMe(hisSt),changeMe(hisMu);
-    break;
-  case "STARCO/KENDA":
-    out0.innerHTML = "Mechanical Design Engineer "
-    out2.innerHTML = "Feb 2017 - Nov 2021";
-    hisAp.style.display = "block";  
-    changeMe(hisUp);changeMe(hisSc),changeMe(hisSc2),changeMe(hisSt),changeMe(hisMu);  
-    break;  
-  case "Y.S.P":
-    out0.innerHTML = "Deputy President/Front-End Developer "
-    out2.innerHTML = "Oct 2016 - Feb 2017";
-    hisSc2.style.display = "block";  
-    changeMe(hisUp);changeMe(hisSc),changeMe(hisAp),changeMe(hisSt),changeMe(hisMu);  
-    break;  
-  case "Intervate Ltd":
-    out0.innerHTML = "Mechanical Design Engineer "
-    out2.innerHTML = "Oct 2014 - Feb 2016";
-    hisSt.style.display = "block";  
-    changeMe(hisUp);changeMe(hisSc),changeMe(hisAp),changeMe(hisSc2),changeMe(hisMu);  
-    break;   
-  }
+// Title Automatic
+out1.innerHTML = "@ "+(this.value);
+// Dates
+switch (this.value) {
+case "#100DEVS":
+  out0.innerHTML = "Full Stack Engineer "
+  out2.innerHTML = "Jan 2022 - Present";
+  hisUp.style.display = "block"; 
+  changeMe(hisSc);changeMe(hisAp),changeMe(hisSc2),changeMe(hisSt),changeMe(hisMu);
+  break;
+case "Freelance":
+  out0.innerHTML = "Front-End Developer "
+  out2.innerHTML = "Mar 2021 - Jan 2022";
+  hisSc.style.display = "block"; 
+  changeMe(hisUp);changeMe(hisAp),changeMe(hisSc2),changeMe(hisSt),changeMe(hisMu);
+  break;
+case "STARCO/KENDA":
+  out0.innerHTML = "Mechanical Design Engineer "
+  out2.innerHTML = "Feb 2017 - Nov 2021";
+  hisAp.style.display = "block";  
+  changeMe(hisUp);changeMe(hisSc),changeMe(hisSc2),changeMe(hisSt),changeMe(hisMu);  
+  break;  
+case "Y.S.P":
+  out0.innerHTML = "Deputy President/Front-End Developer "
+  out2.innerHTML = "Oct 2016 - Feb 2017";
+  hisSc2.style.display = "block";  
+  changeMe(hisUp);changeMe(hisSc),changeMe(hisAp),changeMe(hisSt),changeMe(hisMu);  
+  break;  
+case "Intervate Ltd":
+  out0.innerHTML = "Mechanical Design Engineer "
+  out2.innerHTML = "Oct 2014 - Feb 2016";
+  hisSt.style.display = "block";  
+  changeMe(hisUp);changeMe(hisSc),changeMe(hisAp),changeMe(hisSc2),changeMe(hisMu);  
+  break;   
+}
 }
 
 // Initialise click() function
 for(i=0;i<len;i+=1){
-  button[i].onclick=click;}
+button[i].onclick=click;}
 
 
 // Clearing the other job histories
 let changeMe = (key)=> {
-  key.style.display="none"
+key.style.display="none"
 };  
