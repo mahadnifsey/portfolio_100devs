@@ -40,7 +40,7 @@ background: #0A192F;
   width: 35rem;
   margin:0; /*Removes the margin around the .nav*/
   margin-right: 3rem;
-  border:1px solid red;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .navbar--hidden {
@@ -636,7 +636,6 @@ font-size: 0.75rem;
 #mobile-menu.is-active .bar:nth-child(2){opacity:0;}
 #mobile-menu.is-active .bar:nth-child(1){-webkit-transform:translateY(8px) rotate(45deg);-ms-transform:translateY(8px) rotate(45deg);-o-transform:translateY(8px) rotate(45deg);transform:translateY(8px) rotate(45deg);}
 #mobile-menu.is-active .bar:nth-child(3){-webkit-transform:translateY(-8px) rotate(-45deg);-ms-transform:translateY(-8px) rotate(-45deg);-o-transform:translateY(-8px) rotate(-45deg);transform:translateY(-8px) rotate(-45deg);}
-/
 
 
 
@@ -649,40 +648,6 @@ font-size: 0.75rem;
 /* Smallest */
 @media only screen and  (max-width: 20rem) {
 * {font-size: 14px;}
-}
-
-/* Mobile */
-@media only screen and  (max-width: 35rem) {
-/*Title Section*/
-/* #titleTwo {font-size: 1rem;} */
-#titleOne {font-size: 0.9rem;}
-#titleTwo {font-size: 3.5vw;}
-#titlePara {color: white; max-width: 100%;}
-#titleSection {max-width:80%; height: 100vh; margin-bottom: 10rem;}
-
-/*General Section*/
-.generalSection,#aboutSection,#experienceSection,#workSection{max-width:80%;}
-
-/*About Section*/
-#aboutSection-main {flex-direction: column;justify-content: center;align-items: center;}
-#aboutSection-para {width:100%; margin: 0; }
-
-#aboutSection-para > ul {grid-template-columns: repeat(auto-fill, 5rem);grid-auto-rows: 2rem; column-gap: 7rem;}
-#aboutSection-para > ul > li {width: 8rem;}
-#aboutSection-image{display:flex;justify-content:center;width:100%;}
-.dp-content {width: 15rem;height: 15rem;}
-
-/* Experience Section */
-#experienceSection {margin-bottom:6.5rem;}
-.experienceSection-main {display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;}
-#scroll {width:100%;height:2rem;}
-#experienceSection-buttons {display:flex;flex-direction:row;justify-content:center;}
-.slider {height:2rem;}
-#slide {display:none;}
-.exButton {padding:0 0.3rem;}
-.exButton > span {font-size:2.5vw;}
-#history {width:100%;height:25rem;}
-#history > ul {margin-top: -1.5rem;margin-left: -1.8rem;}
 }
 
 @media only screen and  (max-width: 52rem){
@@ -777,7 +742,7 @@ footer p{margin: 0;}
 /* #titleTwo {font-size: 1rem;} */
 #titleOne {font-size: 0.9rem;}
 #titleTwo {font-size: 3.5vw;}
-#titlePara {color: white; max-width: 100%;}
+#titlePara {max-width: 100%;}
 #titleSection {max-width:80%; height: 100vh; margin-bottom: 10rem;}
 
 /*General Section*/
@@ -805,8 +770,11 @@ footer p{margin: 0;}
 #history > ul {margin-top: -1.5rem;margin-left: -1.8rem;}
 }
 
-/* Mobile Navigation Menu */
-@media only screen and (max-width: 720px) { 
+/* Big Mobile Nav */
+@media only screen and (min-width:320px) and (max-width: 720px) { 
+  #titlePara {color:grey;}
+
+
   .navbar ul{
     display:flex;
     flex-direction:column;
@@ -814,9 +782,7 @@ footer p{margin: 0;}
     justify-self:end;
     align-items:flex-start;
     position:fixed;
-    top:4.5rem;
-    width:15rem;
-    height:50vh;
+    top:4rem;
     transform:translate(180%);
     text-align:center;
     overflow:hidden;
@@ -824,11 +790,51 @@ footer p{margin: 0;}
     background-color: #112240;
   }
   /* .navbar li{padding:1.5rem;} */
-  .navbar li{margin: 1rem 0;}
+  .navbar li{margin: 1rem -1rem;}
   .navbar li:first-child{margin-top:3rem;}
   .navbar li a{font-size:1rem;}
   .menu-toggle,.bar{display:block;cursor:pointer;}
   .mobile-nav{transform:translate(0%)!important;}
   .navbar button {margin-left: 2rem; font-size: 1rem;}
+}
 
+/* Big Mobile Nav - Position */
+@media only screen and (min-width: 610px) and (max-width: 720px) {
+  #titlePara {color:lime;}
+  .navbar ul {
+    left: 25rem; /* Big Nav Position*/
+    width:18rem;
+    height:50vh
+  }
+}
+
+/* Medium Mobile Nav - Position */
+@media only screen and (min-width: 500px) and (max-width: 610px) {
+  #titlePara {color:green;}
+  .navbar ul {
+    left: 18rem; /* Big Nav Position*/
+    width:18rem;
+    height:45vh
+  }
+}
+
+/* Smallest Mobile Nav - Position  */
+@media only screen and (min-width: 436px) and (max-width: 500px) {
+  #titlePara {color:red;}
+  .navbar ul {
+    left: 15rem;
+    width:13rem;
+    height:40vh;
+  }
+
+  .navbar li{margin: 0rem -2rem;}
+  .navbar li:first-child{margin-top:1rem;}
+}
+
+/* Mobile Nav - Positions  */
+@media only screen and (min-width: 360px) and (max-width: 428px) {
+  #titlePara {color:yellow;}
+  .navbar ul {
+    height:45vh;
+  }
 }
