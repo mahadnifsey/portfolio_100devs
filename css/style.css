@@ -772,7 +772,7 @@ footer p{margin: 0;}
 
 /* Big Mobile Nav */
 @media only screen and (min-width:320px) and (max-width: 720px) { 
-  #titlePara {color:grey;}
+  /* #titlePara {color:grey;} */
 
 
   .navbar ul{
@@ -793,6 +793,7 @@ footer p{margin: 0;}
   .navbar li{margin: 1rem -1rem;}
   .navbar li:first-child{margin-top:3rem;}
   .navbar li a{font-size:1rem;}
+  .navbar li:active{background-color: grey;}
   .menu-toggle,.bar{display:block;cursor:pointer;}
   .mobile-nav{transform:translate(0%)!important;}
   .navbar button {margin-left: 2rem; font-size: 1rem;}
@@ -800,7 +801,7 @@ footer p{margin: 0;}
 
 /* Big Mobile Nav - Position */
 @media only screen and (min-width: 610px) and (max-width: 720px) {
-  #titlePara {color:lime;}
+  /* #titlePara {color:lime;} */
   .navbar ul {
     left: 25rem; /* Big Nav Position*/
     width:18rem;
@@ -810,7 +811,7 @@ footer p{margin: 0;}
 
 /* Medium Mobile Nav - Position */
 @media only screen and (min-width: 500px) and (max-width: 610px) {
-  #titlePara {color:green;}
+  /* #titlePara {color:green;} */
   .navbar ul {
     left: 18rem; /* Big Nav Position*/
     width:18rem;
@@ -820,7 +821,7 @@ footer p{margin: 0;}
 
 /* Smallest Mobile Nav - Position  */
 @media only screen and (min-width: 436px) and (max-width: 500px) {
-  #titlePara {color:red;}
+  /* #titlePara {color:red;} */
   .navbar ul {
     left: 15rem;
     width:13rem;
@@ -833,8 +834,13 @@ footer p{margin: 0;}
 
 /* Mobile Nav - Positions  */
 @media only screen and (min-width: 360px) and (max-width: 428px) {
-  #titlePara {color:yellow;}
+  /* #titlePara {color:pink;} */
   .navbar ul {
+    left: 12rem;
+    width:13rem;
     height:45vh;
   }
+   .navbar li{margin-left:-2rem;}
+
+  footer p{width:80%;text-align:center;}
 }
